@@ -1,0 +1,25 @@
+:root{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    background-color: #ffe7ca;
+}
+
+#hero{
+    min-height: 500px;
+    padding: 2rem;
+    color: #ffffff;
+    display: flex;
+    background-image: url(https://images.unsplash.com/photo-1643146001923-d37e3d0b07fb?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px) grayscale(50%);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}

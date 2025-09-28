@@ -3,23 +3,69 @@
     padding:0;
 }
 
-body{
+*{
     margin: 0;
     padding:0;
+    text-align: center;
+}
+
+body{
     background-color: #ffe7ca;
 }
 
+header{
+    padding: 1.5rem;
+}
+
+nav > h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+nav > button:nth-child(3){
+    margin: 0 1rem 0 1rem;
+}
+
+button{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 0.8rem;
+    transition: background-color ease 0.2s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(95, 0, 0);
+}
+
 #hero{
-    min-height: 500px;
+    min-height: calc( 100vh - 262px);
     padding: 2rem;
     color: #ffffff;
     display: flex;
+    justify-content: center;
     background-image: url(https://images.unsplash.com/photo-1643146001923-d37e3d0b07fb?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    backdrop-filter: blur(5px) grayscale(50%);
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+}
+
+
+#hero > div{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    backdrop-filter: blur(5px) grayscale(50%);
+}
+
+#hero > div > h1, h2{
+    font-size: 2.5rem;
 }

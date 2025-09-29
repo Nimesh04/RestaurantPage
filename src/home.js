@@ -1,5 +1,5 @@
 
-export const homeDiv = function (){
+export const createHome = function (){
     const newDiv = document.createElement("div");
     newDiv.id = "hero";
     newDiv.innerHTML = 

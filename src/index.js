@@ -7,21 +7,30 @@ const homeTab = document.querySelector("#home");
 const menuTab = document.querySelector("#menu");
 const aboutTab = document.querySelector("#about");
 const contentTab = document.querySelector("#content");
-let hasContent = false;
+// let hasContent = false;
 
+const childContent = createHome();
+contentTab.append(childContent);
 
+function menu(){
+    contentTab.innerHTML = ``;
+    const child = createMenu();
+    contentTab.append(child);
+}
+const menuBtn = document.querySelector(".cta");
 
 homeTab.addEventListener("click", ()=> {
     contentTab.innerHTML = ``;
     const child = createHome();
     contentTab.append(child);
+    menuBtn.addEventListener("click", menu);
 })
 
-menuTab.addEventListener("click", ()=>{
-    contentTab.innerHTML = ``;
-    const child = createMenu();
-    contentTab.append(child);
-})
+
+
+
+menuTab.addEventListener("click", menu);
+
 
 aboutTab.addEventListener("click", ()=>{
     contentTab.innerHTML = ``;
